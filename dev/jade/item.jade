@@ -1,0 +1,27 @@
+extends layouts/layout
+include  components/**/*.jade
+block title
+    | 123
+block content
+    .card
+        h1.card__item Смартфон Apple iPhone 7 32Gb (Black)
+        .card__content
+            .card__left
+            .card__right
+                .card__price 38 500
+                button.card__buy Добавить в корзину
+                hr
+                .card__characteristic
+                    h2 Цвет
+                    .card__wrapper
+                        a(href='#' style="background-color: #000").card__color
+                        a(href='#' style="background-color: #000").card__color
+                        a(href='#' style="background-color: #000").card__color
+                        a(href='#' style="background-color: #000").card__color
+                .card__characteristic
+                    h2 Объем памяти
+                    .card__wrapper
+                        a(href='#').card__type 32
+                        a(href='#').card__type.active 32
+                        a(href='#').card__type.active 32
+                hr

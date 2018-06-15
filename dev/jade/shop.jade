@@ -1,0 +1,48 @@
+extends layouts/layout
+include  components/**/*.jade
+block title
+    | 123
+block content
+    .shop
+        h1.shop__title Телефоны
+        .shop__content
+            .shop__left
+                .filter
+                    form
+                        .filter__item
+                            span Категории
+                                i.fas.fa-angle-up
+                            .filter__hidden
+                                ul
+                                    li
+                                        a(href='#') Планшеты
+                                    li
+                                        a(href='#') Планшеты
+                                    li
+                                        a(href='#') Планшеты
+                        .filter__item
+                            span Цена
+                                i.fas.fa-angle-up
+                            .filter__hidden
+                                .filter__range
+                                    input(type='number')
+                                    span до
+                                    input(type='number')
+                        .filter__buttons
+                            button(type='submit').filter__button.filter__button_submit Применить
+                            button(type='reset').filter__button.filter__button_reset Очистить
+
+
+            .shop__right
+                .sort
+                    span Сортировать:
+                    a(href='#').sort__item.active По популярности
+                        <i class="fas fa-sort-amount-down"></i>
+                    a(href='#').sort__item По цене
+                .catalog
+                    include components/catalog
+                    include components/catalog
+                    include components/catalog
+                    include components/catalog
+                    include components/catalog
+                    include components/catalog

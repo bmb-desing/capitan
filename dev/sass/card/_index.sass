@@ -1,0 +1,72 @@
+.card
+  max-width: 1170px
+  width: 100%
+  margin: 0 auto
+  padding: 30px 0
+  &__title
+    font-size: 30px
+    font-weight: normal
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 80px
+  &__left
+    flex-basis: 48%
+  &__right
+    flex-basis: 48%
+    hr
+      margin: 40px
+      height: 0
+      opacity: .5
+      border: none
+      border-top: 1px solid #dcdcdc
+  &__price
+    text-align: center
+    font-size: 48px
+    padding-bottom: 25px
+  &__buy
+    border: none
+    border-radius: 37.5px
+    background-color: #3eaefc
+    color: #fff
+    height: 75px
+    line-height: 75px
+    max-width: 280px
+    width: 100%
+    margin: 0 auto
+    display: block
+    cursor: pointer
+  &__characteristic
+    a
+      text-decoration: none
+      color: #000
+    h2
+      text-align: center
+      padding-bottom: 30px
+      font-size: 18px
+      font-weight: 300
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding-bottom: 30px
+  &__color
+    display: block
+    width: 35px
+    height: 35px
+    -webkit-border-radius: 10em
+    -moz-border-radius: 10em
+    border-radius: 10em
+  &__type
+    border: solid 1px rgba(#000, .2)
+    display: block
+    max-width: 90px
+    flex-basis: 100%
+    text-align: center
+    height: 35px
+    line-height: 35px
+    border-radius: 17.5px
+    &.active
+      color: #ffffff
+      background-color: #000
